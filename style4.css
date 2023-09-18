@@ -1,0 +1,156 @@
+.booking .book-form .flex .inputBox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder{
+    background: var(--black);
+    color: var(--light-white);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Damion&family=Kaushan+Script&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Parisienne&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Satisfy&family=Shrikhand&family=Zeyada&display=swap');
+
+:root{
+    --main-color2: #000066;
+    --main-color:#1a1aff;
+    --main-color3:#00ffff;
+    --box-color:#80c1ff;
+    --black:#222;
+    --white:#fff;
+    --light-black:#777;
+    --light-white:#fff9;
+    --new:#cce6ff;
+    --dark-bg:rgba(0,0,0,.7);
+    --light-bg:#eee;
+    --border:0.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --test-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+    --fot:#d2e0e0;
+    --footer:#969aa4;
+
+
+}
+
+
+*{
+font-family: 'PT Serif', serif;
+margin: 0; padding: 0;
+box-sizing: border-box;
+outline: none; border: none;
+text-decoration: none;
+text-transform: capitalize;
+}
+.packages .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.packages .box-container{
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    display: none;
+}
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4),
+.packages .box-container .box:nth-child(5),
+.packages .box-container .box:nth-child(6){
+    display: inline-block;
+}
+
+.packages .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.packages .box-container .box:hover .image{
+    height: 25rem;
+    overflow: hidden;
+}
+.packages .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.packages .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.packages .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.packages .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+.packages .load-more{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+
+.booking .book-form{
+    padding: 2rem;
+    background: var(--fot);
+
+}
+.booking .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.booking .book-form .flex .inputBox{
+    flex:1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.booking .book-form .flex .inputBox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder{
+    background: var(--black);
+    color: var(--light-white);
+}
+
+.booking .book-form .flex .inputBox span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.booking .book-form .flex .inputBox select{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.booking .book-form .flex .inputBox select:focus{
+    background: var(--black);
+    color: var(--white);
+}
+
+.booking .book-form .flex .inputBox select:focus::placeholder{
+    background: var(--black);
+    color: var(--light-white);
+}
